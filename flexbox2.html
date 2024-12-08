@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX 2</title>
+
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            height: calc(100vh - 8px);
+            padding: 4px;
+            gap: 4px;
+        }
+
+        nav,main,aside,footer {
+            border: 1px solid black;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 4px;
+        }
+
+        .navleft {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .navright {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .redbox {
+            background: red;
+            height: 40px;
+            width: 40px;
+        }
+
+        .redrectangle {
+            background: red;
+            height: 25px;
+            width: 60px;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+            gap: 4px;
+        }
+
+        main {
+            display: flex;
+            flex-grow: 1;
+            padding: 4px;
+            gap: 8px;
+            flex-direction: row;
+            border: 1px solid black;
+
+        }
+
+        .mainbox {
+            border: 1px solid black;
+            align-content: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            display: flex;
+            padding: 10px;
+            gap: 4px;
+            width: 50%;
+        }
+
+        .mainbox2 {
+            border: 1px solid black;
+            display: flex;
+            align-content: flex-start;
+            flex-wrap: wrap;
+            width: 50%;
+            padding: 5px;
+            gap: 4px;
+        }
+
+        aside {
+            display: flex;
+            flex-direction: column;
+            padding: 4px;
+            gap: 4px;
+        }
+
+        .asidebox {
+            border: 1px solid black;
+            display: flex;
+            height: 5vh;
+            width: 15vw;
+        }
+
+        .smallbox {
+            border: 1px solid black;
+            align-items: flex-start;
+            height: 80px;
+            width: 80px;
+            margin-top: 3px;
+        }
+
+        .bigbox {
+            border: 1px solid black;
+            height: 180px;
+            width: 250px;
+        }
+
+        footer {
+            padding: 4px;
+            gap: 4px;
+        }
+
+        .footertop {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .footerbot {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .redboxes {
+            display: flex;
+            flex-direction: row;
+            gap: 4px;
+        }
+
+        .smallboxes {
+            background: red;
+            height: 20px;
+            width: 20px;
+        }
+
+        .hr {
+            padding: 4px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navleft">
+            <div class="redbox"></div>
+            <div>
+                <p>FLEXBOX</p>
+            </div>
+        </div>
+        <div class="navright">
+            <div class="redrectangle"></div>
+            <div class="redrectangle"></div>
+        </div>
+    </nav>
+    <div class="content">
+        <main>
+            <div class="mainbox">
+            <div class="bigbox"></div>
+            <div class="bigbox"></div>
+            <div class="bigbox"></div>
+            <div class="bigbox"></div>
+        </div>
+            <div class="mainbox2 mainbox1">
+                <div class="smallbox"></div>
+                <div class="smallbox"></div>
+                <div class="smallbox"></div>
+                <div class="smallbox"></div>
+                <div class="smallbox"></div>
+                <div class="smallbox"></div>
+                <div class="smallbox"></div>
+                <div class="smallbox"></div>
+                <div class="smallbox"></div>
+                <div class="smallbox"></div>
+                <div class="smallbox"></div>
+                <div class="smallbox"></div>
+                <div class="smallbox"></div>
+                <div class="smallbox"></div>
+                <div class="smallbox"></div>
+            </div>
+        </main>
+        <aside>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+        </aside>
+    </div>
+    <footer>
+        <div class="footertop">
+            <div class="redbox"></div>
+            <div>
+                <p>FLEXBOX</p>
+            </div>
+        </div>
+        <div class="hr">
+            <hr>
+        </div>
+        <div class="footerbot">
+            <div class="redboxes">
+                <div class="smallboxes"></div>
+                <div class="smallboxes"></div>
+                <div class="smallboxes"></div>
+                <div class="smallboxes"></div>
+                <div class="smallboxes"></div>
+                </div>
+                <div class="text">
+                    <p>&copy;Copyright All rights reserved.</p>
+                </div>
+        </div>
+    </footer>
+</body>
+</html>
